@@ -1,11 +1,25 @@
-header_pages:
-  - index.md
-  - about.md
-  - contact.md
+permalink: /:year:month:day/:title
+url: #Your url here
+baseurl: /project
 
-footer: Copyright 2020
+# variables
+name: Your Site Name
+description: Your description here
+google_verification: null
 
-# style: light # dark (default) or light
 
-plugins:
-  - jekyll-seo-tag
+# File management
+include: [".htaccess"]
+exclude: ["README.md", "LICENSE"]
+
+# Sass
+sass:
+  style: :compressed
+  sass_dir: _sass
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    disable : true
